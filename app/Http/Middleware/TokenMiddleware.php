@@ -22,11 +22,11 @@ class TokenMiddleware
 
         $http = new Client();
         $response = $http->request(
-            'POST','
-            http://localhost.8000/api/token',
+            'POST',
+            'http://localhost:8000/api/auth/token',
             [
                 'headers' => [
-                    'Authorization' => 'Bearer', $token,
+                    'Authorization' => 'Bearer '. $token,
                     'Accept' => 'application/json',
                 ]
             ]
