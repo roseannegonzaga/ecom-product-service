@@ -16,4 +16,4 @@ class CartSeeder extends Seeder
         Cart::factory()->count(5)->create();
 
     }
-}
+} 
